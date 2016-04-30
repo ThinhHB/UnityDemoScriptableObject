@@ -1,2 +1,7 @@
 /Library
 /Temp
+/Assembly-CSharp-Editor.csproj
+/Assembly-CSharp.csproj
+/UnityDemoScriptableObject.sln
+/UnityDemoScriptableObject.userprefs
+/obj
