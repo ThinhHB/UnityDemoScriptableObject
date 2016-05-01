@@ -60,12 +60,6 @@ public class MovementComponent : MonoBehaviour
 	void Update()
 	{
 		var velo = _myRigidbody.velocity;
-		// if player reach limit speed, then do nothing
-//		if (Mathf.Abs(velo.x) >= _activeMovementConfig.limitMovingSpeed)
-//		{
-//			return;
-//		}
-
 		// movement
 		if (Input.GetKey(KeyCode.A))
 		{
@@ -82,7 +76,6 @@ public class MovementComponent : MonoBehaviour
 		{
 			velo.y = _activeMovementConfig.jumpSpeed;
 		}
-
 
 		// clamp to limit speed
 		velo.x = Mathf.Clamp(velo.x, -_activeMovementConfig.limitMovingSpeed, _activeMovementConfig.limitMovingSpeed);
